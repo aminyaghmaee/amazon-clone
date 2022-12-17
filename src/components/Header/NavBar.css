@@ -40,3 +40,10 @@
   border-radius: 4px;
   padding: 5px;
 }
+.nav_fill a:hover{
+  border: 1px solid white;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
