@@ -12,6 +12,11 @@
   object-fit: contain;
   margin: 0 20px;
   margin-top: 18px;
+  padding: 5px;
+}
+.header__logo:hover{
+  border: 1px solid white;
+  border-radius: 4px;
 }
 .header__search {
   display: flex;
@@ -33,11 +38,12 @@
 .header__optionLineOne {
   font-size: 10px;
 }
+
 .header__optionLineTwo {
   font-size: 13px;
   font-weight: 800;
 }
-.header__optionBasket {
+.header__optionBasket_icon {
   display: flex;
   align-items: center;
   color: white;
@@ -57,4 +63,13 @@
   margin-left: 10px;
   margin-right: 10px;
   color: white;
+  padding: 5px;
+}
+.header__option:hover{
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.header_optionBasket:hover{
+  border: 1px solid white;
+  border-radius: 4px;
 }
