@@ -1,49 +1,54 @@
-.nav_main{
-  display:flex;
-  align-items:center;
-  background-color: #232f3e;
-  color: white;
-  max-height: 50px;
-}
-.nav_left{
-  display:flex;
-  margin-bottom: 3px;
-  padding: 5px;
-  margin-right: 5px;
-}
-.nav_left:hover{
-  border: 1px solid white;
-  border-radius: 4px;
-}
-.nav_left_span{
-  padding-left: 5px;
-}
-.nav_fill a:hover{
-  border: 1px solid white;
-  border-radius: 4px;
-}
-.nav_fill{
+.nav_main {
   display: flex;
-  margin-bottom: 3px;
+  align-items: center;
+  background-color: #232f3e;
+  height: 38px;
+  justify-content: space-between;
 }
-.nav_fill a{
-  margin-right: 20px;
-  padding: 5px;
+.nav_left {
+  display: flex;
+  padding: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
+  gap: 0.4rem;
 }
-.nav_right{
-  margin-left: auto;
-  margin-right: 10px;
-  padding: 5px;
-}
-.nav_right:hover{
+.nav_left > div:hover {
   border: 1px solid white;
   border-radius: 4px;
-  padding: 5px;
 }
-.nav_fill a:hover{
+.links_container {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #eaffed;
+  padding: 3px 10px;
+}
+.links_container:hover {
   border: 1px solid white;
+  border-radius: 2px;
+  margin: -1px;
 }
-a{
-  text-decoration: none;
+.first_container {
+  display: flex;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 3px;
+}
+.first_container:hover {
+  border: 1px solid white;
+  border-radius: 2px;
+  margin: -1px;
+}
+.last_links_container{
   color: white;
+  padding: 3px 10px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.last_links_container:hover{
+border: 1px solid white;
+  border-radius: 2px;
+  margin: -1px;
+}
+.nav_right {
+  margin-right: 1rem;
 }
