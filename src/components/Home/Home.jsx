@@ -1,5 +1,4 @@
-import React from "react";
-import amazonHomeImage from "../static/amazon-home-image.jpg";
+import React, {useState,useEffect} from "react";
 import Product from "../product/Product";
 import Card1 from "../static/card1.jpg";
 import Ipad from "../static/ipad-pro.jpg";
@@ -10,17 +9,37 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./Home.css";
 import { useSelector } from "react-redux";
+
 const Home = () => {
 
+  function changeSlideImg() {
+    setImgIndex((1+imgIndex) % homeSlideImgs.length);
+  }
+  useEffect(()=>{
+    const interval=setInterval(changeSlideImg,6000);
+    return () => {
+      clearInterval(interval);
+    } 
+  })
   const homeSlideImgs= useSelector(state => state.homeSlideImgsReducer);
-  console.log(homeSlideImgs);
-
+  const [imgIndex, setImgIndex]= useState(5);
   return (
     <div className="home">
       <div className="home__container">
-        <img className="home__image" src={homeSlideImgs[1]} alt="" />
-        <ArrowBackIosIcon className="Arrow__back" />
-        <ArrowForwardIosIcon className="Arrow__forward" />
+        <img className="home__image" src={homeSlideImgs[imgIndex]} alt="" />
+        <ArrowBackIosIcon className="Arrow__back" 
+          onClick={()=>{
+            if (imgIndex == 0) {
+              setImgIndex(homeSlideImgs.length -1)
+            }else{
+              setImgIndex((imgIndex-1) % homeSlideImgs.length);}
+          }}
+        />
+        <ArrowForwardIosIcon className="Arrow__forward"
+          onClick={()=>{
+            setImgIndex((1+imgIndex) % homeSlideImgs.length);
+          }}
+        />
         <div className="home__row">
           <Product
             id="4903850"
