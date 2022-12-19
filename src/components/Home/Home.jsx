@@ -9,11 +9,16 @@ import mixer from "../static/mixer.jpg";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./Home.css";
+import { useSelector } from "react-redux";
 const Home = () => {
+
+  const homeSlideImgs= useSelector(state => state.homeSlideImgsReducer);
+  console.log(homeSlideImgs);
+
   return (
     <div className="home">
       <div className="home__container">
-        <img className="home__image" src={amazonHomeImage} alt="" />
+        <img className="home__image" src={homeSlideImgs[1]} alt="" />
         <ArrowBackIosIcon className="Arrow__back" />
         <ArrowForwardIosIcon className="Arrow__forward" />
         <div className="home__row">
