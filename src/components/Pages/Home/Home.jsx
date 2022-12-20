@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Category from "./category/Category";
+import Category from "./HomeBody/HomeBody";
 import HomeSlider from "./HomeSlider";
 
 const Home = () => {

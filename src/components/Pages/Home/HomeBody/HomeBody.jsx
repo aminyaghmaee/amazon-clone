@@ -1,5 +1,5 @@
 import React from "react";
-import "./category.css";
+import "./HomeBody.css";
 import Headsets from "../../../static/headsets-image-transformed.png";
 import keyboards from "../../../static/keyboards-image-transformed.png";
 import Computermice from "../../../static/computer-mice-image-transformed.png";
