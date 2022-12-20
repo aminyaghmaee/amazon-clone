@@ -28,7 +28,7 @@ export default function NavBar() {
       </div>
 
       <div className="nav_right">
-        <Link to="/">
+        <Link to="/ShopDeals">
           <div className="last_links_container">Shop deals in Electronics</div>
         </Link>
       </div>

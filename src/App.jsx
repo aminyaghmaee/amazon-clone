@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import NavBar from "./components/Header/NavBar";
-import Home from "./components/Home/Home";
+import Home from "./components/Pages/Home/Home";
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import TodaysDeals from "./components/Pages/TodaysDeals/TodaysDeals";
 import CustomerService from "./components/Pages/CustomerService/CustomerService";
