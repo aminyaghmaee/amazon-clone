@@ -1,29 +1,39 @@
 import React from "react";
 import amazonHomeImage from "../static/amazon-home-image.jpg";
+import Product from "../product/Product";
+import Card1 from "../static/card1.jpg";
+import Ipad from "../static/ipad-pro.jpg";
+import speaker from "../static/speaker.jpg";
+import Monitor from "../static/monitor.jpg";
+import mixer from "../static/mixer.jpg";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./Home.css";
-// import { Category } from "@mui/icons-material";
-import Category from "../category/category";
 const Home = () => {
+
+  function changeSlideImg() {
+    setImgIndex((1+imgIndex) % homeSlideImgs.length);
+  }
+  useEffect(()=>{
+    const interval=setInterval(changeSlideImg,6000);
+    return () => {
+      clearInterval(interval);
+    } 
+  })
+  const homeSlideImgs= useSelector(state => state.homeSlideImgsReducer);
+  const [imgIndex, setImgIndex]= useState(5);
   return (
     <div className="home">
       <div className="home__container">
         <img className="home__image" src={amazonHomeImage} alt="" />
         <ArrowBackIosIcon className="Arrow__back" />
         <ArrowForwardIosIcon className="Arrow__forward" />
-        <Category/>
-        {/* <div className="home__row">
-          <Category
-            title="Gaming accessories"
-            img={Headsets}
-            img_2={keyboards}
-            img_3={Computermice}
-            img_4={Chairs}
-            span_1="Headsets"
-            span_2="Keyboards"
-            span_3="Computer mice"
-            span_4="Chairs"
+        <div className="home__row">
+          <Product
+            id="4903850"
+            title="the lean startup"
+            price={29.99}
+            image={Card1}
           />
           <Category title="Dresses" />
           <Category title="Shop by Category" />
