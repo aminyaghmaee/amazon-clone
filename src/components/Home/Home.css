@@ -5,31 +5,32 @@
   margin-right: auto;
   max-width: 1500px;
 }
-.home__row{
+/* .home__row {
+  font-size: 1.2rem;
   display: flex;
   z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
-}
-.home__image{
+} */
+.home__image {
   width: 100%;
   z-index: -1;
   margin-bottom: -350px;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) , rgba(0,0,0));  
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0));
 }
-.Arrow__back{
-font-size: 3rem !important;
-position: absolute;
-top: 10rem;
-left: 14rem;
-color: white;
-cursor: pointer;
-}
-.Arrow__forward{
+.Arrow__back {
   font-size: 3rem !important;
-position: absolute;
-top: 10rem;
-right: 13rem;
-color: white;
-cursor: pointer;  
+  position: absolute;
+  top: 10rem;
+  left: 14rem;
+  color: white;
+  cursor: pointer;
+}
+.Arrow__forward {
+  font-size: 3rem !important;
+  position: absolute;
+  top: 10rem;
+  right: 13rem;
+  color: white;
+  cursor: pointer;
 }

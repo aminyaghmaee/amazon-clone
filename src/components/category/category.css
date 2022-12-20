@@ -1,0 +1,106 @@
+.categories{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1.5rem;
+  width: 97%;
+  }
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  margin-bottom: 0px;
+  padding: 20px;
+  width: 100%;
+  /* max-height: 400px; */
+  height: 440px;
+  min-width: 100px;
+  background-color: white;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.category__group > div > img {
+  margin-top: 1rem;
+  margin-left: 5px;
+  height: 140px;
+  width: 150px;
+  object-fit: contain;
+  cursor: pointer;
+
+}
+.category > button , .category__group> button {
+  background: #fff;
+  border: none;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #4b7185;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.category__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.category__group > div{
+  display: flex;
+  flex-direction: column;
+}
+.category__group > div > span {
+  font-size: 0.7rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.category__group{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+
+.category > .single__image{
+  width: 300px;
+  object-fit: fill;
+  height: 400px;
+  cursor: pointer;
+  align-self: center;
+}
+.sign__in{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 0px;
+  padding: 20px;
+  width: 100%;
+  /* max-height: 400px; */
+  height: 150px;
+  min-width: 100px;
+  background-color: white;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  position: relative;
+}
+.sign__in__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.sign__in > button {
+  width: 19rem;
+  height: 2rem;
+  background: #FFD814;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.sign__in > img {
+  position: absolute;
+  top: 12rem;
+}
