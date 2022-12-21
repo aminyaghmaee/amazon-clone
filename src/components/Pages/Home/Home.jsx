@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home__container">
-        <HomeSlider/>
+        <HomeSlider />
         <Category />
       </div>
     </div>

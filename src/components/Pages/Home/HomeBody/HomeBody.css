@@ -3,6 +3,8 @@
   grid-template-columns: repeat(4,1fr);
   gap: 1.5rem;
   width: 97%;
+  position: relative;
+  top: 16rem;
   }
 .category {
   display: flex;
