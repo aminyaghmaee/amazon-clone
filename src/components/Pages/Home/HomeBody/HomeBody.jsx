@@ -49,27 +49,36 @@ import Holydayhomeprep from "../../../static/holiday home prep image.jpg";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useRef } from "react";
+import { FlareSharp } from "@mui/icons-material";
 
 const Category = () => {
   const [isActive, setIsActive] = useState(false);
   const [isActive1, setIsActive1] = useState(false);
-
-  const [ok , setOk] = useState(false)
-  const [ok1 , setOk1] = useState(false);
-
-  const handleClick = () => {
-    setIsActive(true)
+  const [ok, setOk] = useState(false);
+  const [ok1, setOk1] = useState(false);
+  const [disabled, setDisabled] = useState(false);
+  const [disabled1, setDisabled1] = useState(false);
+  
+  const handleClick = (event) => {
+    setIsActive(true);
     setOk(true);
     setTimeout(() => {
-      setOk(false)
+      setOk(false);
     }, 1000);
+    // event.currentTarget.disabled = true;
+    setDisabled(true);
+    setDisabled1(false);
   };
-  const handleClick1 = () => {
-    setIsActive(false)
+  const handleClick1 = (event) => {
+    setIsActive(false);
     setOk1(true);
     setTimeout(() => {
-      setOk1(false)
+      setOk1(false);
     }, 1000);
+    setDisabled1(true);
+    setDisabled(false)
+    // event.currentTarget.disabled = true;
   };
 
   return (
@@ -158,19 +167,27 @@ const Category = () => {
           </p>
           <button>Shop holiday gifts</button>
         </div>
-        <div onClick={handleClick1} className="arrow__back">
+        <button
+          disabled={disabled1 ? true : false}
+          onClick={handleClick1}
+          className="arrow__back"
+        >
           <ArrowBackIosIcon />
-        </div>
-        <div onClick={handleClick} className="arrow__forward">
+        </button>
+        <button
+          disabled={disabled ? true : false}
+          onClick={handleClick}
+          className="arrow__forward"
+        >
           <ArrowForwardIosIcon />
-        </div>
+        </button>
 
         <div
           style={{
             right: isActive ? "1rem" : " ",
           }}
           id="images__category__mid"
-          className={ok ? "ok" : null + ok1 ? "ok1" : null }
+          className={ok ? "ok" : null + ok1 ? "ok1" : null}
         >
           <img src={Mostloved} alt="" />
           <img src={Stockingsuffers} alt="" />
