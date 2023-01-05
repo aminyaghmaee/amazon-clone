@@ -9,6 +9,7 @@ import Registery from "./components/Pages/Registery/Registery";
 import GiftCards from "./components/Pages/GiftCards/GiftCards";
 import Sell from "./components/Pages/Sell/Sell";
 import ShopDeals from "./components/Pages/ShopDeals/ShopDeals";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
       <Router>
@@ -25,6 +26,7 @@ function App() {
           <Route path='/sell' element={<Sell/>} />
           <Route path='/shopdeals' element={<ShopDeals/>} />
         </Routes>
+        <Footer/>
       </Router>
   );
 }

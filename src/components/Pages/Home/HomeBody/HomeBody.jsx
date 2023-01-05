@@ -82,7 +82,7 @@ const Category = () => {
   };
 
   return (
-    <>
+    <div className="all__categories">
       <div className="categories">
         <div className="category">
           <p className="category__title">Gaming accessories</p>
@@ -188,7 +188,7 @@ const Category = () => {
           }}
           id="images__category__mid"
           className={ok ? "ok" : null + ok1 ? "ok1" : null}
-        >
+        > 
           <img src={Mostloved} alt="" />
           <img src={Stockingsuffers} alt="" />
           <img src={Fashionimage} alt="" />
@@ -317,7 +317,7 @@ const Category = () => {
           <button>Shop now</button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

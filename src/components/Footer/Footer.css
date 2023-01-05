@@ -1,0 +1,105 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__signin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.footer__signin > p {
+  font-size: 13px;
+  font-weight: bold;
+}
+.footer__signin > button {
+  width: 15rem;
+  height: 28px;
+  background: linear-gradient(#ffd875 30%, #ffc42d 50%);
+  border-color: #ffc42d;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.footer__signin > div > span {
+  font-size: 0.7rem;
+}
+.footer__signin > div > button {
+  background: #fff;
+  border: none;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #4b7185;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+.line__footer {
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
+  margin: 2rem;
+}
+
+.back__to__top {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  width: 100%;
+  background: #37475a;
+  color: #ebf1fa;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.back__to__top:hover {
+  background-color: #485769;
+}
+.footer__titles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  background-color: #232f3e;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.footer__titles > div > h3 {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+.footer__titles > div > p {
+  color: #ebf1fa;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+
+}
+.footer__titles > div > p:hover{
+  text-decoration: underline;
+}
+
+.amazon__logo__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #232f3e;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.line__logo__footer {
+  width: 100%;
+  height: 1px;
+  background-color: #3a4553;
+  margin: 1rem;
+  
+}

@@ -1,3 +1,6 @@
+.all__categories{
+  margin-bottom: 20rem;
+}
 .categories {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -5,6 +8,7 @@
   width: 97%;
   position: relative;
   top: 16rem;
+  /* margin-bottom: 10rem; */
   /* margin-bottom: 15rem; */
 }
 .category {
