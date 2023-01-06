@@ -2,7 +2,12 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import NavBar from "./components/Header/NavBar";
 import Home from "./components/Pages/Home/Home";
-import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import TodaysDeals from "./components/Pages/TodaysDeals/TodaysDeals";
 import CustomerService from "./components/Pages/CustomerService/CustomerService";
 import Registery from "./components/Pages/Registery/Registery";
@@ -12,22 +17,21 @@ import ShopDeals from "./components/Pages/ShopDeals/ShopDeals";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
-      <Router>
-        {/* Header */}
-        <Header />
-        <NavBar />
-        <Routes>
-          <Route path='/home' element={<Navigate replace to='/'/>} />
-          <Route path='/' element={<Home />} />
-          <Route path='/todaysdeals' element={<TodaysDeals/>} />
-          <Route path='/customerservice' element={<CustomerService/>} />
-          <Route path='/registery' element={<Registery/>} />
-          <Route path='/giftcards' element={<GiftCards/>} />
-          <Route path='/sell' element={<Sell/>} />
-          <Route path='/shopdeals' element={<ShopDeals/>} />
-        </Routes>
-        <Footer/>
-      </Router>
+    <Router>
+      <Header />
+      <NavBar />
+      <Routes>
+        <Route path="/home" element={<Navigate replace to="/" />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/todaysdeals" element={<TodaysDeals />} />
+        <Route path="/customerservice" element={<CustomerService />} />
+        <Route path="/registery" element={<Registery />} />
+        <Route path="/giftcards" element={<GiftCards />} />
+        <Route path="/sell" element={<Sell />} />
+        <Route path="/shopdeals" element={<ShopDeals />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
