@@ -31,7 +31,12 @@
   border-top-left-radius:5px ;
   border-bottom-left-radius:5px ;
   width: 100%;
+  outline: none;
 }
+.header__searchInput:focus {
+  border: solid;
+  border-color: #f3a847 ;
+} 
 .header__searchIcon {
   padding: 5px;
   width: 50px !important;
@@ -40,6 +45,10 @@
   background-color: #FEBD69;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.header__searchIcon:hover{
+  background-color: #f3a847;
 }
 .header__optionLineOne {
   font-size: 10px;
